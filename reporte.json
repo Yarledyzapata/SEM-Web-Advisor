@@ -1,0 +1,14 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "AuditReport",
+    "site": "https://www.wikipedia.org",
+    "result": {
+        "status": "Al día",
+        "priority": "Baja",
+        "tags": [
+            "SEO",
+            "Accesibilidad",
+            "Rendimiento"
+        ]
+    }
+}
