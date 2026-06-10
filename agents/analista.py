@@ -3,12 +3,27 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
+import urllib3
+
+urllib3.disable_warnings(
+    urllib3.exceptions.InsecureRequestWarning
+)
 
 def analizar_sitio(url):
 
     inicio = time.time()
 
-    respuesta = requests.get(url)
+    respuesta = requests.get(
+        url,
+        verify=False,
+        timeout=10,
+        headers={
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 Chrome/137 Safari/537.36"
+            )
+        }
+    )
 
     fin = time.time()
 

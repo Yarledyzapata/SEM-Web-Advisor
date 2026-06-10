@@ -26,18 +26,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#sugiereAccion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#sugiereAccion"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#BuenasPracticas"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#sugiereAccion"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#Recomendacion"/>
-            </owl:Restriction>
-        </rdfs:range>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#BuenasPracticas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#Recomendacion"/>
     </owl:ObjectProperty>
     
 
@@ -46,18 +36,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#tieneEstado">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#tieneEstado"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#BuenasPracticas"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#tieneEstado"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#EstadoSitio"/>
-            </owl:Restriction>
-        </rdfs:range>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#BuenasPracticas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mateo/ontologies/2026/4/untitled-ontology-2#EstadoSitio"/>
     </owl:ObjectProperty>
     
 

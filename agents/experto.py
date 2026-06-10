@@ -89,7 +89,7 @@ def evaluar_sitio(
     # =========================
 
     regla1 = ctrl.Rule(
-        tiempo['lento'] |
+        tiempo['lento'] &
         errores_var['muchos'],
         mantenimiento['urgente']
     )
@@ -138,6 +138,9 @@ def evaluar_sitio(
     )
 
     simulador.compute()
+
+    print("SALIDAS DIFUSAS:")
+    print(simulador.output)
 
     resultado = simulador.output.get(
         'mantenimiento',
